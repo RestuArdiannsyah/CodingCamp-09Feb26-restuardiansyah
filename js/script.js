@@ -27,14 +27,14 @@ function handleFormSubmit(e) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    const category = document.querySelector('input[name="category"]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
     const message = document.getElementById('message').value.trim();
     
     if (!validateForm(name, email, phone, message)) {
         return;
     }
     
-    displayOutput(name, email, phone, category, message);
+    displayOutput(name, email, phone, gender, message);
     document.getElementById('contactForm').reset();
     localStorage.setItem('userName', name);
     document.getElementById('userName').textContent = name;
@@ -64,7 +64,7 @@ function validateForm(name, email, phone, message) {
     return true;
 }
 
-function displayOutput(name, email, phone, category, message) {
+function displayOutput(name, email, phone, gender, message) {
     const outputContent = document.getElementById('outputContent');
     const now = new Date();
     const timeString = now.toLocaleString('id-ID', {
@@ -80,7 +80,7 @@ function displayOutput(name, email, phone, category, message) {
         <p><strong>Nama:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Telepon:</strong> ${escapeHtml(phone)}</p>
-        <p><strong>Kategori:</strong> ${escapeHtml(category)}</p>
+        <p><strong>Kategori:</strong> ${escapeHtml(gender)}</p>
         <p><strong>Pesan:</strong> ${escapeHtml(message)}</p>
         <p><strong>Waktu:</strong> ${timeString}</p>
     `;
