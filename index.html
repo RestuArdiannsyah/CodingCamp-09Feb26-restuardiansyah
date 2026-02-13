@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Teknologi Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="img/logo.png" alt="Logo" class="h-10 w-10">
+            <div class="flex gap-4">
+                <a href="#home" class="px-4 py-2 border rounded-lg hover:bg-gray-900 hover:text-white">Home</a>
+                <a href="#profile" class="px-4 py-2 border rounded-lg hover:bg-gray-900 hover:text-white">Profile</a>
+                <a href="#contact" class="px-4 py-2 border rounded-lg hover:bg-gray-900 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative rounded-xl overflow-hidden shadow-lg mb-8">
+                <img src="img/baner.png" alt="Banner" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <h1 class="text-5xl font-bold absolute top-8 left-8 text-white">Hi <span id="userName">Harfi</span>, Selamat Datang</h1>
+                <p class="text-white absolute top-20 left-8 text-lg">Solusi teknologi terpercaya untuk bisnis Anda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-16 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Tentang Kami -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-8 border-l-4 border-gray-800 pl-4">Tentang Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-300 rounded-xl h-64 overflow-hidden shadow">
+                        <img src="img/perusahaan.webp" alt="Perusahaan" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 mb-4 text-lg">
+                            PT Teknologi Indonesia adalah perusahaan yang berfokus pada penyediaan solusi teknologi digital untuk berbagai industri. Dengan pengalaman lebih dari <strong>10 tahun</strong>, kami telah membantu <strong>ratusan perusahaan</strong> dalam transformasi digital mereka.
+                        </p>
+                        <p class="text-gray-700 text-lg">
+                            Tim profesional kami siap memberikan layanan terbaik untuk memenuhi kebutuhan teknologi bisnis Anda dengan inovasi dan dedikasi yang tinggi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visi & Misi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Visi -->
+                <div class="bg-white p-8 rounded-xl border shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mr-4">
+                            <i class="bi bi-eye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Visi</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Menjadi perusahaan teknologi terdepan yang memberikan solusi inovatif dan berkualitas tinggi untuk mendukung kesuksesan bisnis klien kami.
+                    </p>
+                </div>
+                
+                <!-- Misi -->
+                <div class="bg-white p-8 rounded-xl border shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mr-4">
+                            <i class="bi bi-check-circle text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Misi</h3>
+                    </div>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Memberikan solusi teknologi yang handal</li>
+                        <li>• Mendukung transformasi digital perusahaan</li>
+                        <li>• Memberikan layanan purna jual terbaik</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kantor Kami -->
+            <div>
+                <h2 class="text-4xl font-bold mb-8 border-l-4 border-gray-800 pl-4">Kantor Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Jakarta -->
+                    <div class="bg-white p-6 rounded-xl border shadow text-center">
+                        <img src="img/jakarta.jpg" alt="Jakarta" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                        <h4 class="text-xl font-bold mb-2">Jakarta</h4>
+                        <p class="text-gray-600 mb-1">Jl. Sudirman No. 123</p>
+                        <p class="text-gray-600">Telp: (021) 1234-5678</p>
+                    </div>
+                    
+                    <!-- Bandung -->
+                    <div class="bg-white p-6 rounded-xl border shadow text-center">
+                        <img src="img/bandung.jpg" alt="Bandung" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                        <h4 class="text-xl font-bold mb-2">Bandung</h4>
+                        <p class="text-gray-600 mb-1">Jl. Asia Afrika No. 456</p>
+                        <p class="text-gray-600">Telp: (022) 8765-4321</p>
+                    </div>
+                    
+                    <!-- Surabaya -->
+                    <div class="bg-white p-6 rounded-xl border shadow text-center">
+                        <img src="img/surabaya.jpg" alt="Surabaya" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                        <h4 class="text-xl font-bold mb-2">Surabaya</h4>
+                        <p class="text-gray-600 mb-1">Jl. Pemuda No. 789</p>
+                        <p class="text-gray-600">Telp: (031) 5432-1098</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 border-l-4 border-gray-800 pl-4">Hubungi Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Form -->
+                <form id="contactForm" class="bg-white p-8 rounded-xl shadow border">
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2">Nama</label>
+                        <input type="text" id="name" placeholder="Nama Anda" class="w-full px-4 py-3 border rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" placeholder="Email Anda" class="w-full px-4 py-3 border rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2">Nomor Telepon</label>
+                        <input type="tel" id="phone" placeholder="0812345678" class="w-full px-4 py-3 border rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2">Jenis Kelamin</label>
+                        <div class="flex gap-6">
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="gender" value="Laki-laki" checked> Laki-laki
+                            </label>
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-2">Pesan</label>
+                        <textarea id="message" placeholder="Pesan Anda" rows="4" class="w-full px-4 py-3 border rounded-lg" required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gray-800 text-white font-bold py-3 rounded-lg hover:bg-gray-900">Kirim Pesan</button>
+                </form>
+
+                <!-- Output -->
+                <div class="bg-white p-8 rounded-xl shadow border">
+                    <div class="flex items-center mb-6 pb-4 border-b">
+                        <i class="bi bi-clock text-gray-600 mr-2"></i>
+                        <h3 class="text-lg font-bold">Waktu: <span id="currentTime" class="text-gray-600 font-normal"></span></h3>
+                    </div>
+                    <div id="outputContent" class="space-y-4">
+                        <div class="text-center py-12 text-gray-400">
+                            <i class="bi bi-file-text text-6xl mb-3"></i>
+                            <p>Data akan muncul di sini</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-8 px-6 text-center text-gray-600 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <p>&copy; 2026 PT Teknologi Indonesia. All rights reserved | Created by <strong>Harfi</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

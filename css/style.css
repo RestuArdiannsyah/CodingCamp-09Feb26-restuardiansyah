@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem !important;
+    }
+
+    nav .flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+        padding: 0.5rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
